@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderStyle | Travel, Fashion & Skincare Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-element element-1"></div>
+        <div class="floating-element element-2"></div>
+        <div class="floating-element element-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-suitcase-rolling"></i>
+                    </div>
+                    <span>WanderStyle</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#travel">Travel</a></li>
+                    <li><a href="#fashion">Fashion</a></li>
+                    <li><a href="#skincare">Skincare</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">✨ Explore the World in Style</div>
+                    <h1 class="hero-title">
+                        WanderStyle
+                    </h1>
+                    <p class="hero-subtitle">Your ultimate guide to traveling the world with style, discovering fashion trends from every corner of the globe, and maintaining glowing skin no matter where your adventures take you.</p>
+                    <div class="hero-buttons">
+                        <a href="#blog-posts" class="cta-button primary">
+                            <span>Explore Stories</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        <a href="#newsletter" class="cta-button secondary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Join Our Community</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2133&q=80" alt="Travel fashion blogger with suitcase">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="247">0</span>
+                    <span class="stat-label">Destinations Explored</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="154">0</span>
+                    <span class="stat-label">Fashion Guides</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="89">0</span>
+                    <span class="stat-label">Skincare Routines</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="5">0</span>
+                    <span class="stat-label">Years Blogging</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Controls -->
+    <section class="blog-controls" id="blog-posts">
+        <div class="container">
+            <div class="controls-content">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search destinations, fashion tips, skincare...">
+                    <button class="search-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="filter-controls">
+                    <div class="category-filters">
+                        <button class="filter-btn active" data-category="all">
+                            <i class="fas fa-th-large"></i>
+                            All Posts
+                        </button>
+                        <button class="filter-btn" data-category="travel">
+                            <i class="fas fa-globe-americas"></i>
+                            Travel
+                        </button>
+                        <button class="filter-btn" data-category="fashion">
+                            <i class="fas fa-tshirt"></i>
+                            Fashion
+                        </button>
+                        <button class="filter-btn" data-category="skincare">
+                            <i class="fas fa-spa"></i>
+                            Skincare
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Adventures & Discoveries</h2>
+                <p class="section-subtitle">Join me as I explore breathtaking destinations, showcase stunning fashion finds, and share effective skincare secrets from around the world</p>
+            </div>
+            <div class="posts-grid" id="postsGrid">
+                <!-- Posts will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-text">
+                    <h2>Featured Story</h2>
+                    <h3>Santorini Summer: Mediterranean Fashion & Skincare Secrets</h3>
+                    <p>Discover how to stay stylish and protect your skin while exploring the stunning white-washed villages and crystal-blue waters of Santorini. This comprehensive guide covers everything from perfect summer outfits to essential sun protection routines.</p>
+                    <a href="#" class="read-featured">
+                        <span>Read Full Story</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80" alt="Santorini travel fashion">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i>
+                        Editor's Pick
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Join the WanderStyle Community</h2>
+                    <p>Get weekly travel guides, fashion inspiration, and skincare tips delivered straight to your inbox. Be the first to know about exclusive content and special offers.</p>
+                    <div class="newsletter-stats">
+                        <div class="newsletter-stat">
+                            <i class="fas fa-users"></i>
+                            <span>25K+ Subscribers</span>
+                        </div>
+                        <div class="newsletter-stat">
+                            <i class="fas fa-bolt"></i>
+                            <span>Weekly Inspiration</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <p class="form-note">By subscribing, you agree with our Privacy Policy</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-suitcase-rolling"></i>
+                        </div>
+                        <span>WanderStyle</span>
+                    </div>
+                    <p>Exploring the world with style, sharing fashion discoveries, and skincare secrets from every destination. Join our journey to live beautifully and travel passionately.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-category="travel">Travel Guides</a></li>
+                        <li><a href="#" data-category="fashion">Fashion Trends</a></li>
+                        <li><a href="#" data-category="skincare">Skincare Routines</a></li>
+                        <li><a href="#" data-category="travel">Destination Diaries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Packing Guides</a></li>
+                        <li><a href="#">Seasonal Fashion</a></li>
+                        <li><a href="#">Skincare Products</a></li>
+                        <li><a href="#">Travel Essentials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 WanderStyle. Crafted with <i class="fas fa-heart"></i> and endless <i class="fas fa-plane"></i> adventures</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <script src="script.js"></script>
+      
+</body>
+</html>
